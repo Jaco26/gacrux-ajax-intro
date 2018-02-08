@@ -3,11 +3,11 @@ const app = express();
 
 app.use(express.static('server/public'));
 
-const movieModule = require('./modules/movie-module');
-app.get('/movies', function(request, response) {
-  response.send(movieModule.moviesArray);
-});
+const bodyParser = require('body-parser');
+app.use( bodyParser.urlencoded( { extended: true } ));
 
+const movieRouter = require('./routers/movie-router');
+app.use('/movies', movieRouter);
 
 const port = 5000;
 app.listen(port, function(){

@@ -10,6 +10,18 @@
 </head>
 <body>
   <h1>Movies</h1>
-  <div id="output-movies"></div>
+  <section>
+    <h2>Add a Movie</h2>
+    <form>
+      <input type="text" id="in-title" placeholder="Movie Title">
+      <input type="text" id="in-director" placeholder="Director"><br>
+      <label>Rating:</label><input type="number" id="in-rating" min="1" max="5">
+      <button id="btn-add">Add</button>
+    </form>
+  </section>
+  <section>
+    <h2>All Movies</h2>
+    <div id="output-movies"></div>
+  </section>
 </body>
 </html>

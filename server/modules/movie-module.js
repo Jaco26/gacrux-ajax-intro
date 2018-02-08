@@ -7,4 +7,15 @@ const moviesArray = [
   new Movie('Grand Budapest Hotel', 'Wes Anderson', 4)
 ]
 
-module.exports = { moviesArray: moviesArray }
+function add(movie) {
+  moviesArray.push(movie);
+}
+
+function getAll() {
+  return moviesArray;
+}
+
+module.exports = { 
+  addMovie: add,
+  getAllMovies: getAll
+ }
