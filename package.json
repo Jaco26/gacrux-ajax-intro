@@ -14,5 +14,13 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "jquery": "^3.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaco26/gacrux-ajax-intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jaco26/gacrux-ajax-intro/issues"
+  },
+  "homepage": "https://github.com/Jaco26/gacrux-ajax-intro#readme"
 }

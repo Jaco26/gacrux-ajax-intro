@@ -12,6 +12,9 @@ function add(movie) {
 }
 
 function getAll() {
+  for(movie of moviesArray){
+    console.log('Movie', movie);
+  }
   return moviesArray;
 }
 
